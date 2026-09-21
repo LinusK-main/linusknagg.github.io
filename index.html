@@ -3,38 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Linus Knagg</title>
+    <title>Linus Knagg — IT-tekniker & 'alltiallo-data-kille'</title>
+    <meta name="description" content="Personlig IT-hub och CV för Linus Knagg. IT-tekniker i Piteå med fokus på IAM, Microsoft 365 och modern webbutveckling.">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            max-width: 650px;
-            margin: 50px auto;
-            padding: 0 20px;
-            line-height: 1.6;
-            color: #222;
-            background-color: #fff;
-        }
-        h1 { font-size: 2rem; margin-bottom: 0.2rem; }
-        .subtitle { color: #666; font-size: 1.1rem; margin-top: 0; }
-        hr { border: 0; border-top: 1px solid #eee; margin: 30px 0; }
-        ul { padding-left: 20px; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
+        body { font-family: system-ui, -apple-system, sans-serif; }
     </style>
 </head>
-<body>
-    <h1>Linus Knagg</h1>
-    <p class="subtitle">IT-tekniker</p>
-    
-    <hr>
-    
-    <h2>Om mig</h2>
-    <p>Arbetar med nätverksinfrastruktur, systemadministration och hårdvara.</p>
-    
-    </ul>
+<body class="bg-white text-slate-900 min-h-screen p-4 md:p-8 flex flex-col justify-between max-w-5xl mx-auto">
 
-    <h2>Kontakt</h2>
-    <p>E-post: <a href="mailto:linus@linusknagg.se">linus@linusknagg.se</a><br>
-    LinkedIn: <a href="https://linkedin.com" target="_blank">Min Profil</a></p>
+    <!-- Top Bar -->
+    <header class="flex justify-between items-center py-4 mb-6 border-b border-slate-100">
+        <div class="font-bold text-lg tracking-tight text-slate-900">linusknagg<span class="text-blue-600">.se</span></div>
+        <div class="flex items-center gap-2 bg-emerald-50 text-emerald-700 border border-emerald-200/60 px-3 py-1 rounded-full text-xs font-medium">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            IT-tekniker i Piteå
+        </div>
+    </header>
+
+    <!-- Bento Grid Container -->
+    <main class="grid grid-cols-1 md:grid-cols-3 gap-4 my-auto">
+
+        <!-- Card 1: Main Bio (Large 2x2) -->
+        <div class="md:col-span-2 md:row-span-2 bg-slate-50 border border-slate-200/80 rounded-3xl p-8 flex flex-col justify-between shadow-sm hover:border-slate-300 transition">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600 bg-blue-50 border border-blue-100 px-3 py-1 rounded-full">
+                    Profil
+                </span>
+                <h1 class="text-3xl md:text-5xl font-extrabold text-slate-900 mt-6 leading-tight">
+                    Linus Knagg
+                </h1>
+                <p class="text-lg md:text-xl font-medium text-slate-600 mt-2">
+                    IT-tekniker med fokus på infrastruktur, nätverk och problemlösning.
+                </p>
+                <p class="text-slate-500 text-sm mt-6 leading-relaxed max-w-xl">
+                    Arbetar med daglig IT-drift, helpdesk, nätverk och systemadministration. Målsättningen är alltid stabila system, krispiga konfigurationer och glada kollegor som får det IT-stöd de behöver.
+                </p>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-slate-200/60 flex flex-wrap gap-4 text-xs font-semibold text-slate-600">
+                <span class="flex items-center gap-1.5">📍 Piteå, Sverige</span>
+                <span class="flex items-center gap-1.5">⚡ UniFi & Linux</span>
+                <span class="flex items-center gap-1.5">🔒 Entra ID / SC-300</span>
+            </div>
+        </div>
+
+        <!-- Card 2: Business Link (Knagg Digital) -->
+        <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white rounded-3xl p-6 flex flex-col justify-between shadow-md hover:scale-[1.01] transition">
+            <div>
+                <div class="flex justify-between items-start">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-slate-400">Verksamhet</span>
+                    <span class="text-xs bg-slate-700/80 text-slate-300 px-2.5 py-0.5 rounded-full">B2B</span>
+                </div>
+                <h2 class="text-xl font-bold mt-4">Knagg Digital</h2>
+                <p class="text-slate-300 text-xs mt-2 leading-relaxed">
+                    Mitt sidoprojekt där jag snart bygger hemsidor åt lokala företag i Piteå.
+                </p>
+            </div>
+            <a href="https://knaggdigital.se" class="inline-flex items-center justify-between mt-6 bg-white text-slate-900 font-semibold text-xs px-4 py-2.5 rounded-xl hover:bg-slate-100 transition">
+                <span>Besök knaggdigital.se</span>
+                <span>→</span>
+            </a>
+        </div>
+
+        <!-- Card 3: Certifieringar & Fokus -->
+        <div class="bg-slate-50 border border-slate-200/80 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:border-slate-300 transition">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Kompetens</span>
+                <h2 class="text-lg font-bold text-slate-900 mt-2">Microsoft & Identity</h2>
+                <p class="text-xs text-slate-500 mt-1">Satsning mot Microsoft Certified: Identity and Access Administrator (SC-300).</p>
+            </div>
+            <div class="mt-4 space-y-2 text-xs">
+                <div class="bg-white border border-slate-200 p-2.5 rounded-xl font-medium text-slate-700">
+                    🔑 Entra ID & Identity Access
+                </div>
+                <div class="bg-white border border-slate-200 p-2.5 rounded-xl font-medium text-slate-700">
+                    🌐 VLAN, Routing & UniFi
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Tech Stack (Minimalist) -->
+        <div class="md:col-span-2 bg-slate-50 border border-slate-200/80 rounded-3xl p-6 flex flex-col justify-between shadow-sm hover:border-slate-300 transition">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-slate-400">Verktygslåda</span>
+                <h2 class="text-lg font-bold text-slate-900 mt-1">Teknisk Stack</h2>
+            </div>
+            <div class="flex flex-wrap gap-2 mt-4">
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">Debian / Linux</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">Ubiquiti UniFi</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">AdGuard Home / DNS</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">Astro / HTML / Tailwind</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">Python</span>
+                <span class="bg-white border border-slate-200 px-3 py-1.5 rounded-xl text-xs font-medium text-slate-700">Docker</span>
+            </div>
+        </div>
+
+        <!-- Card 5: Kontakt & CV -->
+        <div class="bg-blue-50/50 border border-blue-100 rounded-3xl p-6 flex flex-col justify-between shadow-sm">
+            <div>
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Kontakt</span>
+                <h2 class="text-lg font-bold text-slate-900 mt-1">Hör av dig</h2>
+                <p class="text-xs text-slate-500 mt-1">Öppen för nätverkande och tekniska diskussioner.</p>
+            </div>
+       <!--     <div class="mt-6 space-y-2">
+                <a href="mailto:linus@linusknagg.se" class="block text-center bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs py-2.5 rounded-xl shadow-sm transition">
+                    E-post
+                </a>
+                <a href="#" class="block text-center bg-white border border-slate-200 text-slate-700 font-semibold text-xs py-2.5 rounded-xl hover:bg-slate-50 transition">
+                    Ladda ner CV (PDF)
+                </a>
+            </div> -->
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-8 pt-4 border-t border-slate-100 text-center text-xs text-slate-400">
+        © 2026 Linus Knagg · Piteå · Powered by GitHub Pages
+    </footer>
+
 </body>
 </html>
